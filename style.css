@@ -35,7 +35,7 @@ img {
 }
 
 nav {
-    flex: 3;
+    flex: 9;
 }
 
 .nav-links {
@@ -266,5 +266,57 @@ footer {
 
 .footer-description {
     color: #BBF9C7;
+
+}
+
+@media (max-width:1024px) {
+    .nav-link {
+
+        font-size: 14px;
+        width: 10vw;
+    }
+
+    .shadow {
+
+        font-size: 4rem;
+    }
+
+
+    .normal-title {
+        font-size: 4rem;
+
+    }
+
+    .button {
+        color: #BBF9C7;
+        font-size: 20px;
+
+    }
+
+}
+
+@media (max-width:768px) {
+    .nav-link {
+
+        font-size: 12px;
+        width: 10vw;
+    }
+
+    .shadow {
+
+        font-size: 3rem;
+    }
+
+
+    .normal-title {
+        font-size: 3rem;
+
+    }
+
+    .button {
+        color: #BBF9C7;
+        font-size: 18px;
+
+    }
 
 }
