@@ -21,6 +21,7 @@ header {
 
 img {
     width: 10vh;
+
 }
 
 .logo,
@@ -67,6 +68,7 @@ nav {
 .content {
     display: flex;
     width: 100%;
+    flex-direction: column;
     min-height: 85vh;
     background-color: #BBF9C7;
 }
@@ -90,12 +92,21 @@ nav {
 
 
 
-h1 {
+.shadow {
     font-weight: bold;
-    font-size: 8rem;
+    font-size: 6rem;
     color: rgb(77, 54, 54);
     letter-spacing: -0.07ex;
     animation: text 0.5s infinite alternate ease-in;
+}
+
+.normal-title {
+    font-weight: bold;
+    font-size: 5rem;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    color: rgb(77, 54, 54);
+    letter-spacing: -0.07ex;
 }
 
 /* text animation */
@@ -113,8 +124,23 @@ h1 {
     display: flex;
     width: 10%;
     height: 40%;
+    min-width: 170px;
 
     animation: bounce 1s infinite
+}
+
+.normal-picture {
+    width: 25%;
+    border-radius: 5px;
+}
+
+.picture-description {
+    color: #4D3636;
+    width: 75%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    letter-spacing: 1px;
+    line-height: 2;
 }
 
 /* avocado animation  */
@@ -148,8 +174,82 @@ h1 {
 
 .button:hover {
     color: #4D3636;
+    background-color: #9eecae;
+
+}
+
+/* contact */
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    width: 100px;
+    font-weight: bold;
+    color: #4D3636;
+}
+
+input {
+
+    width: 20vw;
+    height: 5vh;
+    margin: 5px;
+    text-align: center;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background-color: #4D3636;
+    color: #BBF9C7;
+}
+
+textarea {
+    width: 45vw;
+    background-color: #4D3636;
+    color: #BBF9C7;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#sendBtn {
+    color: #BBF9C7;
+    font-size: 24px;
+    text-align: center;
+    display: block;
+    width: 15vw;
+    text-decoration: none;
+    padding: 6px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: #4D3636;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+
+
+#sendBtn:hover {
+    color: #4D3636;
     background-color: #BBF9C7;
-    border: 1px solid #4D3636;
+
+}
+
+#error {
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+
 }
 
 /* footer */

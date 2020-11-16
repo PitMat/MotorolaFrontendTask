@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style.css">
-    <title>Contact</title>
+    <title>Motorola - Front End Task</title>
 </head>
 
 <body>
@@ -26,12 +26,37 @@
     </header>
 
     <div class="content">
+        <div class="content-description">
+            <h1 class="normal-title">Contact Us!</h1>
+
+            <div id="error"></div>
+            <form id="form" action="/" method="GET">
+                <div>
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" placeholder="Enter your name">
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="text" placeholder="Give your email">
+                </div>
+                <textarea name="message" id="textarea" cols="30" rows="10" placeholder="Message"></textarea>
+
+                <button id="sendBtn" type="submit">SEND</button>
+            </form>
+
+
+
+
+        </div>
 
     </div>
 
     <footer>
         <p class="footer-description">2020 © Mateusz Pitek </p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
